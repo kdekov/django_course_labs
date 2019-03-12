@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{page_title}}</title>
+	<meta charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="{% static 'todo_app/base.css' %}">
+	{% block content_head %}{% endblock content_head %}	
+</head>
+<body>
+	<header>
+		<h1>{{app_name}}</h1>
+		<h2>/ {{page_name}} /</h2>
+	</header>
+	{% block content %}{% endblock content %}
+	<footer>
+    <p>Copyleft <i class="fa fa-copyright rotate-180"></i> 2019, Todo App Demo by Iva E. Popova</p>
+  </footer>
+</body>
+</html>
