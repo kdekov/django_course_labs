@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
+django-extensions = "*"
 
 [dev-packages]
 pylint = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
